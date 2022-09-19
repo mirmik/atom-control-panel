@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--include css-->
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body style="background-color:rgb(52, 50, 53);">
+  <head>
+    <!--include css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--include scripts-->
+    <script src="functions.js"></script>
+  </head>
+  <body style="background-color: rgb(52, 50, 53)">
+    <title>Контрольная панель.</title>
+    <h1>Контрольная панель.</h1>
 
-<title>Контрольная панель.</title>
-<h1>Контрольная панель.</h1>
+    <div class="horizontal-flex">
+      <div class="flex-container">
+        <div><a href="torrent/">qbittorent</a></div>
+        <div><a href="jellyfin/">jellyfin</a></div>
+        <div><a href="syncthing/">syncthing</a></div>
+        <div><a href="rfdaemon/">rfdaemon</a></div>
+        <div><a href="https://github.com/mirmik/">github</a></div>
+        <div>
+          <a href="https://mirmik.github.io/muskrat-and-company/">muskrat</a>
+        </div>
+        <div>
+          <a
+            href="https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html"
+            >muskrat-ipfs</a
+          >
+        </div>
+        <div><a href="https://mirmik.github.io/zencad/">zencad</a></div>
+        <div><a href="http://192.168.1.100">zippo</a></div>
+        <div><a href="http://192.168.1.1">Роутер.</a></div>
+      </div>
+      <div class="label-vertical-container">
+        <div>
+          <a href="https://github.com/mirmik/igris">igris</a>: <img
+          src=https://github.com/mirmik/igris/actions/workflows/cmake.yml/badge.svg
+          /> <img
+          src=https://github.com/mirmik/igris/actions/workflows/licant.yml/badge.svg
+          />
+        </div>
+        <div>
+          <a href="https://github.com/mirmik/nos">nos</a>: <img
+          src=https://github.com/mirmik/nos/actions/workflows/cmake.yml/badge.svg
+          /> <img
+          src=https://github.com/mirmik/nos/actions/workflows/licant.yml/badge.svg
+          />
+        </div>
+        <div>
+          <a href="https://github.com/mirmik/crow">crow</a>: <img
+          src=https://github.com/mirmik/crow/actions/workflows/cmake.yml/badge.svg
+          /> <img
+          src=https://github.com/mirmik/crow/actions/workflows/licant.yml/badge.svg
+          />
+        </div>
+        <div>
+          <a href="https://github.com/mirmik/ralgo">ralgo</a>: <img
+          src=https://github.com/mirmik/ralgo/actions/workflows/cmake.yml/badge.svg
+          /> <img
+          src=https://github.com/mirmik/ralgo/actions/workflows/licant.yml/badge.svg
+          />
+        </div>
+        <div>
+          <a href="https://github.com/mirmik/rabbit">rabbit</a>: <img
+          src=https://github.com/mirmik/rabbit/actions/workflows/cmake.yml/badge.svg
+          /> <img
+          src=https://github.com/mirmik/rabbit/actions/workflows/licant.yml/badge.svg
+          />
+        </div>
+        <div>
+          <a href="https://github.com/mirmik/licant">licant</a>: <img
+          src=https://github.com/mirmik/licant/actions/workflows/python-package.yml/badge.svg
+          />
+        </div>
 
-<div class="horizontal-flex">
-	<div class="flex-container">
-    		<div><a href="torrent/">qbittorent</a></div>
-    		<div><a href="jellyfin/">jellyfin</a></div>
-    		<div><a href="syncthing/">syncthing</a></div>
-    		<div><a href="rfdaemon/">rfdaemon</a></div>
-    		<div><a href="https://github.com/mirmik/">github</a></div>
-    		<div><a href="https://mirmik.github.io/muskrat-and-company/">muskrat</a></div>
-		<div><a href="https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html">muskrat-ipfs</a></div>
-    		<div><a href="https://mirmik.github.io/zencad/">zencad</a></div>
-    		<div><a href="http://192.168.1.100">zippo</a></div>
-    		<div><a href="http://192.168.1.1">Роутер.</a></div>
-	</div>
-        <div class="label-vertical-container">
-		<div>
-			<a href="https://github.com/mirmik/igris">igris</a>:
-			<img src=https://github.com/mirmik/igris/actions/workflows/cmake.yml/badge.svg />
-			<img src=https://github.com/mirmik/igris/actions/workflows/licant.yml/badge.svg />
-		</div>
-		<div>
-			<a href="https://github.com/mirmik/nos">nos</a>:
-			<img src=https://github.com/mirmik/nos/actions/workflows/cmake.yml/badge.svg />
-                        <img src=https://github.com/mirmik/nos/actions/workflows/licant.yml/badge.svg />
-		</div>
-		<div>
-			<a href="https://github.com/mirmik/crow">crow</a>:
-			<img src=https://github.com/mirmik/crow/actions/workflows/cmake.yml/badge.svg />
-                        <img src=https://github.com/mirmik/crow/actions/workflows/licant.yml/badge.svg />
-		</div>
-		<div>
-			<a href="https://github.com/mirmik/ralgo">ralgo</a>:
-			<img src=https://github.com/mirmik/ralgo/actions/workflows/cmake.yml/badge.svg />
-                        <img src=https://github.com/mirmik/ralgo/actions/workflows/licant.yml/badge.svg />
-		</div>
-		<div>
-			<a href="https://github.com/mirmik/rabbit">rabbit</a>:
-			<img src=https://github.com/mirmik/rabbit/actions/workflows/cmake.yml/badge.svg />
-                        <img src=https://github.com/mirmik/rabbit/actions/workflows/licant.yml/badge.svg />
-		</div>
-		<div>
-			<a href="https://github.com/mirmik/licant">licant</a>:
-			<img src=https://github.com/mirmik/licant/actions/workflows/python-package.yml/badge.svg />
-		</div>
-	</div>
-</div>
-https://mangalib.me/duke-i-regressed?section=info
-https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html
-</body>
+        <!--button onclick UpdaterFunction-->
+        <div>
+          <button onclick="UpdaterFunction('night')">Обновить</button>
+        </div>
+      </div>
+    </div>
+    https://mangalib.me/duke-i-regressed?section=info
+    https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html
+  </body>
 </html>
-
