@@ -1,91 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <!--include css-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atom Control Panel</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--include scripts-->
-    <script src="functions.js"></script>
+    <script defer src="functions.js"></script>
   </head>
-  <body style="background-color: rgb(52, 50, 53)">
-    <title>Контрольная панель.</title>
-    <h1>Контрольная панель.</h1>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="kicker">Infra Dashboard</p>
+        <h1>Atom Control Panel</h1>
+        <p class="subtitle">Сервисы и статус CI по рабочим репозиториям.</p>
+      </header>
 
-    <div class="horizontal-flex">
-      <div class="flex-container">
-        <div><a href="torrent/">qbittorent</a></div>
-        <div><a href="jellyfin/">jellyfin</a></div>
-        <div><a href="syncthing/">syncthing</a></div>
-	 <div><a href="syncthing-artemis/">syncthing-artemis</a></div>
-        <div><a href="rfdaemon/">rfdaemon</a></div>
-        <div><a href="https://github.com/mirmik/">github</a></div>
-<div><a href="https://scaledrone.github.io/webrtc/index.html">scaledrone</a></div>
-        <div>
-          <a href="https://mirmik.github.io/muskrat-and-company/">muskrat</a>
+      <section class="section">
+        <div class="section-head">
+          <h2>Сервисы</h2>
         </div>
-        <div>
-          <a
-            href="https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html"
-            >muskrat-ipfs</a
-          >
+        <div class="service-grid">
+          <a class="service-card" href="torrent/">qbittorrent</a>
+          <a class="service-card" href="syncthing/">syncthing</a>
+          <a class="service-card" href="syncthing-artemis/">syncthing-artemis</a>
+          <a class="service-card" href="rfdaemon/">rfdaemon</a>
+          <a class="service-card" href="http://192.168.1.100">zippo</a>
+          <a class="service-card" href="http://192.168.1.1">роутер</a>
+          <a class="service-card" href="https://github.com/mirmik/">github</a>
+          <a class="service-card" href="https://mirmik.github.io/muskrat-and-company/">muskrat</a>
+          <a class="service-card" href="https://cloudflare-ipfs.com/ipns/k51qzi5uqu5dmg33sbjapu87hs5a85nwy452f8cxfbw78w7uq6gl3qgam9taax/index.html">muskrat-ipfs</a>
+          <a class="service-card" href="https://mirmik.github.io/zencad/">zencad</a>
+          <a class="service-card" href="https://scaledrone.github.io/webrtc/index.html">scaledrone</a>
         </div>
-        <div><a href="https://mirmik.github.io/zencad/">zencad</a></div>
-        <div><a href="http://192.168.1.100">zippo</a></div>
-        <div><a href="http://192.168.1.1">Роутер.</a></div>
-      </div>
-      <div class="label-vertical-container">
-        <div>
-          <a href="https://github.com/mirmik/igris">igris</a>: <img
-          src=https://github.com/mirmik/igris/actions/workflows/cmake.yml/badge.svg
-          /> <img
-          src=https://github.com/mirmik/igris/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-        <div>
-          <a href="https://github.com/mirmik/nos">nos</a>: <img
-          src=https://github.com/mirmik/nos/actions/workflows/cmake.yml/badge.svg
-          /> <img
-          src=https://github.com/mirmik/nos/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-        <div>
-          <a href="https://github.com/mirmik/crow">crow</a>: <img
-          src=https://github.com/mirmik/crow/actions/workflows/cmake.yml/badge.svg
-          /> <img
-          src=https://github.com/mirmik/crow/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-        <div>
-          <a href="https://github.com/mirmik/ralgo">ralgo</a>: <img
-          src=https://github.com/mirmik/ralgo/actions/workflows/cmake.yml/badge.svg
-          /> <img
-          src=https://github.com/mirmik/ralgo/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-        <div>
-          <a href="https://github.com/mirmik/rabbit">rabbit</a>: <img
-          src=https://github.com/mirmik/rabbit/actions/workflows/cmake.yml/badge.svg
-          /> <img
-          src=https://github.com/mirmik/rabbit/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-	<div>
-          <a href="https://github.com/mirmik/genos">genos</a>: 
-          <img
-          src=https://github.com/mirmik/genos/actions/workflows/licant.yml/badge.svg
-          />
-        </div>
-        <div>
-          <a href="https://github.com/mirmik/licant">licant</a>: <img
-          src=https://github.com/mirmik/licant/actions/workflows/python-package.yml/badge.svg
-          />
-        </div>
+      </section>
 
-        <!--button onclick UpdaterFunction-->
-        <div>
-          <button onclick="UpdaterFunction('night')">Build igris</button>
+      <section class="section">
+        <div class="section-head">
+          <h2>Проекты Termin Env</h2>
         </div>
-      </div>
-    </div>
-    https://scaledrone.github.io/webrtc/index.html<br/>
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/terminus">terminus</a>
+            <div class="badges">
+              <img alt="termin tests" src="https://github.com/mirmik/terminus/actions/workflows/tests.yml/badge.svg" />
+              <img alt="termin docs" src="https://github.com/mirmik/terminus/actions/workflows/docs.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/termin-base">termin-base</a>
+            <div class="badges">
+              <img alt="termin-base ci" src="https://github.com/mirmik/termin-base/actions/workflows/ci.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/termin-graphics">termin-graphics</a>
+            <div class="badges">
+              <img alt="termin-graphics ci" src="https://github.com/mirmik/termin-graphics/actions/workflows/ci.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/termin-gui">termin-gui</a>
+            <div class="badges badge-muted">workflow пока не подключен</div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/termin-nodegraph">termin-nodegraph</a>
+            <div class="badges badge-muted">workflow пока не подключен</div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/termin-scene">termin-scene</a>
+            <div class="badges badge-muted">workflow пока не подключен</div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/diffusion-editor">diffusion-editor</a>
+            <div class="badges badge-muted">workflow пока не подключен</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-legacy">
+        <div class="section-head">
+          <h2>Старые проекты</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/igris">igris</a>
+            <div class="badges">
+              <img alt="igris cmake" src="https://github.com/mirmik/igris/actions/workflows/cmake.yml/badge.svg" />
+              <img alt="igris licant" src="https://github.com/mirmik/igris/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/nos">nos</a>
+            <div class="badges">
+              <img alt="nos cmake" src="https://github.com/mirmik/nos/actions/workflows/cmake.yml/badge.svg" />
+              <img alt="nos licant" src="https://github.com/mirmik/nos/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/crow">crow</a>
+            <div class="badges">
+              <img alt="crow cmake" src="https://github.com/mirmik/crow/actions/workflows/cmake.yml/badge.svg" />
+              <img alt="crow licant" src="https://github.com/mirmik/crow/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/ralgo">ralgo</a>
+            <div class="badges">
+              <img alt="ralgo cmake" src="https://github.com/mirmik/ralgo/actions/workflows/cmake.yml/badge.svg" />
+              <img alt="ralgo licant" src="https://github.com/mirmik/ralgo/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/rabbit">rabbit</a>
+            <div class="badges">
+              <img alt="rabbit cmake" src="https://github.com/mirmik/rabbit/actions/workflows/cmake.yml/badge.svg" />
+              <img alt="rabbit licant" src="https://github.com/mirmik/rabbit/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/genos">genos</a>
+            <div class="badges">
+              <img alt="genos licant" src="https://github.com/mirmik/genos/actions/workflows/licant.yml/badge.svg" />
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="repo-link" href="https://github.com/mirmik/licant">licant</a>
+            <div class="badges">
+              <img alt="licant python" src="https://github.com/mirmik/licant/actions/workflows/python-package.yml/badge.svg" />
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
